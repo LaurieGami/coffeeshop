@@ -1,0 +1,238 @@
+/* ================ General Styling ================ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+html {
+    background-color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+h1, h2 {
+    font-size: 6rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+}
+
+h3 {
+    font-size: 3.3rem;
+    font-weight: 300;
+}
+
+h1, h2, h3 {
+    color: #393939;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/* ================ Navbarigation ================ */
+.navbar {
+    width: 100%;
+    background: #FFF0ED;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__icon {
+    width: 50px;
+    align-self: flex-start; /* Try baseline flexbox */
+}
+
+.navbar__title {
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar__list-item {
+    list-style: none;
+    padding: 2rem;
+}
+
+.navbar__link {
+    text-decoration: none;
+    font-size: 2.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #393939;
+}
+
+.navbar__link--nitro-blue {
+    color:#5BACC3;
+}
+
+/* ================ Button ================ */
+.btn {
+    border: none;
+    background: #5BACC3;
+    color: #FFF;
+    text-transform: uppercase;
+    min-width: 180px;
+    max-width: 80%;
+    min-height: 64px;
+    max-height: 200px;
+    padding: 2rem 0;
+    font-size: 2.1rem;
+    font-weight: 400;
+    position: absolute;
+}
+
+.btn--frame {
+    background: none;
+    border: 2px solid #393939;
+    position: relative;
+    top: -0.5rem;
+    left: -0.5rem;
+}
+
+/* ================ Icon ================ */
+.icon {
+    min-width: 50px;
+    max-width: 120px;
+}
+
+/* ================ Column Style Section ================ */
+.column-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F7F7F7;
+    padding: 6rem 8rem;
+}
+
+.column-section--white {
+    background: #FFFFFF;
+}
+
+/* ================ Side-by-Side Style Section ================ */
+.split-section {
+    width: 100%;
+    padding: 6rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+}
+
+.split-section--pink {
+    background: #FFF0ED;
+}
+
+.split-section--tall {
+    padding: 12rem 8rem;
+}
+
+.split-section__left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.split-section__title, .split-section__text {
+    margin: 0 0 4.0rem 0;
+}
+
+.split-section__text--short {
+    width: 80%;
+}
+
+.split-section__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 4.0rem 0;
+}
+
+.split-section__icon {
+    max-width: 50px;
+}
+
+.split-section__right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.split-section__img-container {
+    background-image: url('../assets/images/coldbrewbackground.png');
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+}
+
+.split-section__img-container--frame {
+    background: none;
+    border: 5px solid #5BACC3;
+    position: relative;
+    top: -2rem;
+    left: -2rem;
+}
+
+
+/* ================ Footer ================ */
+.footer {
+    width: 100%;
+    background: #FFF0ED;
+    padding: 8rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer__title {
+    margin-bottom: 2.0rem;
+}
+
+.footer__txt--bold {
+    font-weight: 700;
+}
+
+.social__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.footer__icon {
+    opacity: 0.25;
+    position: absolute;
+    width: 100px;
+}
+
+.footer__icon--left {
+    top: 2rem;
+    left: -4rem;
+}
+
+.footer__icon--right {
+    bottom: 2rem;
+    right: -4rem;
+}

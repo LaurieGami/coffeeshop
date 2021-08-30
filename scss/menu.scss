@@ -1,0 +1,112 @@
+@use 'partials/colors';
+@use 'partials/typography' as *;
+@use 'partials/variables' as *;
+@use 'partials/mixins' as *;
+
+/* ================ Menu Hero ================ */
+.menu-hero {
+    background-image: url('../assets/images/coffee-circle.jpg');
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 575px;
+    max-height: 600px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__title {
+        min-width: 280px;
+        max-width: 300px;
+        min-height: 180px;
+        max-height: 200px;
+        background: none;
+        border: 5px solid colors.$secondary-color;
+        color: colors.$white;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        
+        &--bg {
+            background: colors.$black;
+            border: none;
+            position: relative;
+            top: 1.5rem;
+            left: 1.5rem;
+            z-index: 0;
+        }
+    }
+}
+
+
+/* ================ Sub Navigation ================ */
+.sub-nav {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 60px;
+    max-height: 80px;
+    background-color: colors.$black;
+    padding: 2rem;
+    
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__list-item {
+        list-style: none;
+        border-left: 4px solid colors.$secondary-color;
+        padding: 0 2rem;
+    }
+    
+    &__link {
+        @include nav-link-font-style;
+        color: colors.$white;
+    }
+}
+
+/* ================ Products Section ================ */
+.product {
+    display: flex;
+    flex-direction: column;
+    
+    &__category {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        
+        // Alternating background colour for the Products Section
+        &:nth-child(odd) {
+            background-color: colors.$primary-color;
+        }
+        
+        &:nth-child(even) {
+            background-color: colors.$light-grey;
+        }
+    }
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 2rem 0;
+    }
+    
+    &__txt {
+        width: 42%;
+        font-style: italic;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    
+    &__price {
+        margin: 0;
+        color: colors.$secondary-color;
+    }
+}

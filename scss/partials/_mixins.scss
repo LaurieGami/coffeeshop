@@ -1,0 +1,57 @@
+@use 'colors';
+@use 'typography' as *;
+@use 'variables' as *;
+
+/* ============================== GENERAL MIXINS ============================== */
+// Mixin for resetting the default styles that are applied to a ul element
+@mixin reset-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+// Mixin for adding space-between on the main axis and center on the cross axis on flex rows
+@mixin row-main-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ============================== BASIC FONT STYLES ============================== */
+
+// Main Headings Font Style (h1 & h2)
+@mixin main-heading-font-style {
+    font-size: $font-size*6;
+    font-weight: 300;
+}
+
+// Secondary Headings Font Style (h3, nav heading, footer heading)
+@mixin secondary-heading-font-style {
+    font-size: $font-size*3.3;
+    font-weight: 300;
+}
+
+// Nav Links Font Style (main navbar & menu sub-nav)
+@mixin nav-link-font-style {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $font-size*2.1;
+    font-weight: 400;
+    color: colors.$black;
+}
+
+// Buttons Font Style
+@mixin button-font-style {
+    text-transform: uppercase;
+    font-size: $font-size*2.1;
+    font-weight: 400;
+    color: colors.$white;
+}
+
+// Paragraph Font Style
+@mixin paragraph-font-style {
+    font-size: $font-size*1.8;
+    font-weight: 400;
+}

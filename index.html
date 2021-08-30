@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/global.css">
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>Coffee Shop - Home</title>
+</head>
+<body>
+        
+    <header class="header">
+        <!-- ==================== Main Nav ==================== -->
+        <nav class="navbar">
+            <a href="./index.html" class="navbar__logo-link">
+                <img class="icon navbar__icon" src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bean logo">
+                <h2 class="navbar__title">nitro</h2>
+            </a>
+            <ul class="navbar__list">
+                <li class="navbar__list-item"><a href="./index.html" class="navbar__link">About</a></li>
+                <li class="navbar__list-item"><a href="./pages/menu.html" class="navbar__link">Menu</a></li>
+                <li class="navbar__list-item"><a href="./pages/menu.html" class="navbar__link navbar__link--accent">Shop Now</a></li>
+            </ul>
+        </nav>
+
+        <!-- ==================== Hero - Split Section ==================== -->
+        <section class="split-section split-section--primary-bg">
+            <div class="split-section__left">
+                <h1 class="split-section__title">Nitro Coffee</h1>
+                <p class="split-section__text split-section__text--short">Coffee is a brewed drink prepared from roasted coffee beans, the seed of berries from certain Coffea species.</p>
+                <a href="./pages/menu.html" class="split-section__link">
+                    <button class="btn split-section__btn">Shop Now</button>
+                    <button class="btn btn--bg split-section__btn"></button>
+                </a>
+            </div>
+            <div class="split-section__right">
+                <img src="./assets/images/coffeebeans-hero.png" alt="coffee bag" class="split-section__img">
+            </div>
+        </section>
+    </header>
+
+    <!-- ==================== Main Content ==================== -->
+    <main class="main">
+        <!-- ==================== Our Products - Column Section ==================== -->
+        <section class="column-section">
+            <h2 class="column-section__title">Our Products</h2>
+            <section class="card">
+                <article class="card__item">
+                    <div class="card__top">
+                        <img class="card__img" src="./assets/images/coffeebeans.png" alt="coffee beans">
+                    </div>
+                    <div class="card__bottom">
+                        <div class="card__info">
+                            <h3 class="card__title">Coffee Beans</h3>
+                            <p class="card__quantity">Pack of 3</p>
+                        </div>
+                        <div class="card__info">
+                            <p class="card__price">$19</p>
+                        </div>
+                        </div>
+                    </article>
+                <article class="card__item">
+                    <div class="card__top">
+                        <img class="card__img" src="./assets/images/coldbrew.png" alt="cold brew">
+                    </div>
+                    <div class="card__bottom">
+                        <div class="card__info">
+                            <h3 class="card__title">Cold Brew</h3>
+                            <p class="card__quantity">1 can</p>
+                        </div>
+                        <div class="card__info">
+                            <p class="card__price">$5</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card__item">
+                    <div class="card__top">
+                        <img class="card__img" src="./assets/images/inhousebrew.png" alt="in-house brew">
+                    </div>
+                    <div class="card__bottom">
+                        <div class="card__info">
+                            <h3 class="card__title">In-house Brew</h3>
+                            <p class="card__quantity">1 cup</p>
+                        </div>
+                        <div class="card__info">
+                            <p class="card__price">$3</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <a href="./pages/menu.html" class="section__link">
+                <button class="btn section__btn">View All</button>
+                <button class="btn btn--bg section__btn"></button>
+            </a>
+        </section>
+
+        <!-- ==================== About - Split Section ==================== -->
+        <section class="split-section split-section--tall">
+            <div class="split-section__left">
+                <h2 class="split-section__title">We're Different</h2>
+                <p class="split-section__text">We grow and roast our own beans. Every bean, every cup, every step of the way, we strive for excellence.</p>
+                <ul class="split-section__list">
+                    <li class="split-section__list-item">
+                        <img src="./assets/images/planting.svg" alt="planting icon" class="icon split-section__icon">
+                    </li>
+                    <li class="split-section__list-item">
+                        <img src="./assets/images/coffee-beans.svg" alt="coffee beans icon" class="icon split-section__icon">
+                    </li>
+                    <li class="split-section__list-item">
+                        <img src="./assets/images/coffee-cup.svg" alt="coffee cup icon" class="icon split-section__icon">
+                    </li>
+                </ul>
+                <a href="./index.html" class="split-section__link">
+                    <button class="btn split-section__btn">Learn More</button>
+                    <button class="btn btn--bg split-section__btn"></button>
+                </a>
+            </div>
+            <div class="split-section__right">
+                <div class="split-section__img-container">
+                    <img src="./assets/images/tiltedcan.png" alt="tilted coffee can" class="split-section__img">
+                </div>
+                <div class="split-section__img-container split-section__img-container--bg"></div>
+            </div>
+        </section>
+
+        <!-- ==================== Discount Section ==================== -->
+        <section class="discount">
+            <div class="discount__box">
+                <p class="discount__txt">Get 20% off your first order with code: <span class="discount__txt--bold">FirstNitro</span></p>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- ==================== Footer ==================== -->
+    <footer class="footer">
+        <!-- ==================== Address - Footer Section ==================== -->
+        <section class="footer__section">
+            <h3  class="footer__title">Address</h3>
+            <p class="footer__txt">503 Broadway Penthouse</p>
+            <p class="footer__txt">New York</p>
+            </p>
+        </section>
+
+        <!-- ==================== Hours - Footer Section ==================== -->
+        <section class="footer__section">
+            <h3 class="footer__title">Hours</h3>
+            <p class="footer__txt"><span class="footer__txt--bold">Monday - Friday:</span> 9am - 7pm</p>
+            <p lass="footer__txt"><span class="footer__txt--bold">Saturday - Sunday:</span> 10am - 5pm</p>
+        </section>
+
+        <!-- ==================== Social Nav - Footer Section ==================== -->
+        <section class="footer__section">
+            <h3 class="footer__title">Social</h3>
+            <nav class="social">
+                <ul class="social__list">
+                    <li class="social__list-item">
+                        <a href="https://www.facebook.com/" target="_blank"><img class="icon" src="./assets/logos/Facebook-Icon.svg" alt="facebook"></a>
+                    </li>
+                    <li class="social__list-item">
+                        <a href="https://www.yelp.com/" target="_blank"><img class="icon" src="./assets/logos/Yelp-Icon.svg" alt="yelp"></a>
+                    </li>
+                    <li class="social__list-item">
+                        <a href="https://www.instagram.com/" target="_blank"><img class="icon" src="./assets/logos/Instagram-Icon.svg" alt="instagram"></a>
+                    </li>
+                </ul>
+            </nav>
+        </section>  
+
+        <!-- ==================== Footer Background Icons ==================== -->
+        <img src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="Coffee Beans" class="footer__icon footer__icon--left">
+        <img src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="Coffee Beans" class="footer__icon footer__icon--right">
+    
+    </footer>
+
+</body>
+</html>

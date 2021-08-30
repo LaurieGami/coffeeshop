@@ -1,0 +1,108 @@
+@use 'partials/colors';
+@use 'partials/typography' as *;
+@use 'partials/variables' as *;
+@use 'partials/mixins' as *;
+
+/* ================ Card ================ */
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 6rem 0;
+    
+    &__item {
+        min-width: 330px;
+        max-width: 350px;
+        min-height: 440px;
+        max-height: 460px;
+        border-radius: 10px;
+        box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    &__top {
+        width: 100%;
+        height: 65%;
+        background: colors.$white;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__img {
+        height: 240px;
+    }
+    
+    &__bottom {
+        width: 100%;
+        height: 35%;
+        background: colors.$primary-color;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    &__quantity {
+        margin: 0;
+        color: colors.$grey;
+    }
+    
+    &__price {
+        color: colors.$secondary-color;
+        font-size: 3.3rem;
+        font-weight: 700;
+        margin: 0;
+    }
+}
+
+/* ================ Discount ================ */
+.discount {
+    width: 100%;
+    padding: 6rem 0 12rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    // CSS Animation: this makes the discount background switch colors
+    @keyframes discount-background {
+        0% {
+            background: colors.$black;
+        }
+        50% {
+            background: colors.$secondary-color;
+        }
+        100% {
+            background: colors.$black;
+        }
+    }
+
+    &__box {
+        max-width: 90%;
+        background: colors.$black;
+        padding: 4rem 6rem;
+
+        // CSS Animation: this changes the background color of the Discount Box
+        animation: discount-background 2.5s cubic-bezier(0.1, 0.65, 0.95, 0.1) 0s infinite alternate;
+    }
+    
+    &__txt {
+        font-size: 4.5rem;
+        font-weight: 400;
+        color: colors.$white;
+        
+        &--bold {
+            font-weight: 700;
+        }
+    }
+}
